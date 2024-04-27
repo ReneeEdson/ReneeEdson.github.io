@@ -30,4 +30,5 @@ const welcomeDiv = document.getElementById ('welcome');
 welcomeDiv.textContent = welcomeMessage;
 
 // Add a secret message to localStorage
-localStorage.setItem("It's a secret to everybody.", "Uhh...Life finds a way... to store secrets in localStorage.");
+let secret = localStorage.getItem("It's a secret to everybody");
+console.log(secret);
