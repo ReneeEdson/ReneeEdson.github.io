@@ -10,7 +10,7 @@ links.forEach(link => {
     link.style.fontWeight= 'bold'
 })
 
-const hours = new Date().getHours() // get the current hour
+const hours = new Date().getHours()
 
 let welcomeMessage;
 
@@ -29,6 +29,5 @@ let welcomeMessage;
 const welcomeDiv = document.getElementById ('welcome');
 welcomeDiv.textContent = welcomeMessage;
 
-// Add a secret message to localStorage
 let secret = localStorage.getItem("It's a secret to everybody");
 console.log(secret);
